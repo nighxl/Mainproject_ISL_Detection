@@ -1,0 +1,44 @@
+name: signsignify
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  camera: ^0.10.5+9 # For live camera feed
+  image_picker: ^1.0.7 # For image upload
+  flutter_tts: ^3.8.5 # For text-to-speech functionality
+  path_provider: ^2.0.15
+  image: ^4.0.17
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Define fonts properly
+  fonts:
+    - family: Pacifico
+      fonts:
+        - asset: asset/fonts/Pacifico-Regular.ttf
+    - family: Poppins
+      fonts:
+        - asset: asset/fonts/Poppins-Regular.ttf
+
+  # Add assets correctly
+  assets:
+    - asset/ISL_SVM_Model.tflite
+    - asset/resnet_model01.tflite
+    - asset/inception_model01.tflite
+    - asset/label_map.json
+    - asset/signs.png
